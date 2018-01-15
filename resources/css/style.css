@@ -10,7 +10,8 @@ Orange color: #e67e22
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 html,
@@ -21,6 +22,7 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility; 
+	overflow-x: hidden;
 }
 
 .clearfix {zoom:1;}
@@ -137,6 +139,8 @@ a:visited {
 	text-decoration: none;
 	padding-bottom: 1px;
 	border-bottom: 1px solid #e67e22;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
 	transition: all .2s;
 }
 
@@ -156,6 +160,8 @@ input[type=submit] {
 	font-weight: 300;
 	text-decoration: none;
 	border-radius: 200px;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
 	transition: all .2s;
 }
 
@@ -198,6 +204,9 @@ input[type=submit] {
 /* ------------------------------------ */
 
 header {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(img/hero.jpg);
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
+	background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
 	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg);
 	height: 100vh;
 	background-size: cover;
@@ -210,7 +219,9 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -238,6 +249,8 @@ header {
 	text-transform: uppercase;
 	font-size: 90%;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
 	transition: all .2s;
 	/*transform-origin: left;*/
 	padding: 8px 0;
@@ -286,12 +299,18 @@ header {
 	opacity: 0.7;
 	width: 100%;
 	height: auto;
-	transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	        -ms-transform: scale(1.15);
+	    transform: scale(1.15);
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
 	transition: all .5s;
 }
 
 .meal-photo img:hover {
-	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	        -ms-transform: scale(1.03);
+	    transform: scale(1.03);
 	opacity: 1;
 }
 
@@ -371,6 +390,9 @@ header {
 /* ------------------------------------ */
 
 .section-testimonials {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.8))), url(img/back-customers.jpg);
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+	background-image: -o-linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
 	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
 	background-size: cover;
 	color: #fff;
@@ -422,7 +444,8 @@ cite img {
 	border-radius: 5px;
 	width: 90%;
 	margin-left: 5%;
-	box-shadow: 0 2px 2px #efefef;
+	-webkit-box-shadow: 0 2px 2px #efefef;
+	        box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
@@ -555,6 +578,7 @@ footer {
 .ion-social-googleplus,
 .ion-social-instagram {
     -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
     transition: color 0.2s;
 }
 
